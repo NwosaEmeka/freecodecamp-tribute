@@ -1,0 +1,111 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: rgba(54, 168, 69, 0.644);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+    width: 75%;
+    margin: 20px auto;
+    background-color:rgba(236, 234, 221, 0.89);
+    overflow: hidden;
+}
+#title{
+    text-align: center;
+}
+.flag{
+    width: 10%;
+    height:60px;
+    float:right;
+    margin:10px;
+    animation-name: flag_wave;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.flag #green{
+    background-color: green;
+    width:33.3%;
+    height:100%;
+    float: left;
+}
+.flag #white{
+    background-color: white;
+    width:33.3%;
+    height:100%;
+    float: left;
+}
+.flag #green2{
+    background-color: green;
+    width:33.3%;
+    height:100%;
+    float: left;
+}
+#title h1{
+    font-size: 1.6em;
+    font-weight: bold;
+}
+#img-div{
+    padding:10px;
+    margin:0 30px;
+}
+#img-div #image{
+    max-width: 100%;
+    display:block;
+    margin: 0 auto;
+    border-radius:100%;
+}
+#img-div #img-caption{
+    text-align: center;
+    font-style: italic;
+}
+#tribute-info{
+    width:80%;
+    display: block;
+    margin: auto;
+}
+#tribute-info h2{
+    text-align: center;
+}
+#tribute-info fieldset{
+    border: 2px solid rgba(128, 127, 121, 0.89);
+    margin-bottom:20px;
+}
+
+#tribute-info legend{
+    display:block;
+    margin:auto;
+    font-weight: bold;
+    font-style: italic;
+}
+#tribute-info fieldset p{
+    text-align:justify;
+    padding: 0 20px;
+}
+#tribute-info blockquote{
+    padding: 10px;
+}
+aside{
+    margin-top: 20px;
+}
+aside h3{
+    text-align:center;
+}
+aside audio{
+    display: block;
+    margin:auto;
+}
+@keyframes flag_wave{
+    50%{
+        transform: scale(1.2);
+    }
+}
+@media screen and (max-width:720px){
+    .flag{
+        height:30px;
+    }
+}
+@media screen and (max-width:375px){
+    .flag{
+        height:15px;
+    }
+}
